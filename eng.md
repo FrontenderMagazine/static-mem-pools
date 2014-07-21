@@ -4,13 +4,13 @@
 
 So you get an email saying how your web-game / web-app is performing badly after a certain amount of time, you dig through your code, don’t see anything that stands out, until you open up Chrome’s memory performance tools, and see this:
 
-![][I wonder what all those saw-tooths are?]
+![graph1][I wonder what all those saw-tooths are?]
 
 *One of your co-workers chuckles, because they realize that you’ve got a memory-related performance problem.*
 
 In the memory graph view, this saw-tooth pattern is very telling about a potentially critical performance problem. As your memory usage grows, you’ll see the chart area also grow in the timeline capture. When the chart dips suddenly, it’s an instance when the Garbage Collector has run, and cleaned up your referenced memory objects.
 
-![][Look at all those GC Events!]
+![graph2][Look at all those GC Events!]
 
 In a graph like this, you can see that there’s lots of Garbage Collection events occurring, which can be harmful to your web-apps’ performance. This article will talk about how to take control of your memory usage, reducing the impact on your performance.
 
@@ -30,11 +30,11 @@ The process in which a GC reclaims memory is not free, it usually cuts into your
 
 As noted, a GC pulse will occur once a set of heuristics determines that there are enough inactive objects that a pulse would be beneficial. As such, the key to reducing the amount of time that the Garbage Collector takes from your application lies in eliminating as many cases of excessive object creation and release as you can. This process of creating/freeing object frequently is called “memory churn”. If you can reduce memory churn during the lifetime of your application, you also reduce the amount of time GC takes from your execution. This means you need to remove / reduce the number of created and destroyed objects, effectively, you have to stop allocating memory. This process will move your memory graph from this :
 
-![][I wonder what all those saw-tooths are?]
+![graph3][I wonder what all those saw-tooths are?]
 
 to this:
 
-![][Ahhhh, that's better.]
+![graph4][Ahhhh, that's better.]
 
 In this model, you can see that the graph no longer has a [sawtooth][6] like pattern, but rather grows a great deal in the beginning, and then slowly increases over time. If you’re running into performance problems due to memory churn, this is the type of graph you’ll want to create.
 
