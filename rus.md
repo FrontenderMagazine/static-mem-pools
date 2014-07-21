@@ -131,6 +131,6 @@
 [20]: http://addyosmani.com/blog/taming-the-unicorn-easing-Javascript-memory-profiling-in-devtools/
 [21]: http://www.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-Javascript/#more-123093
 
-[[Интересно что это еще за зубцы?]]: img/fig1.jpg
+[[Интересно что это еще за зубцы?]: img/fig1.jpg
 [Только взгляните сколько раз запускается очистка памяти!]: img/fig2.jpg
 [Вот так то лучше.]: img/fig3.jpg
