@@ -126,7 +126,9 @@
 
     var newEntity = gEntityObjectPool.allocate();
     newEntity.pos = {x: 215, y: 88};
+
     //..... выполнение действий с объектом
+    
     gEntityObjectPool.free(newEntity); //освобождение объекта после окончания действий
     newEntity = null; //удаление ссылки на этот объект
 
