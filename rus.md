@@ -218,8 +218,12 @@
 использованием Инструментов Разработчика][20]
 * [Пишем быстрый и эффективный javascript][21]
 
----
-Статья переведена благодаря спонсорской поддержке компании «[Одноклассники][22]».
+<section class="sponsor-block sponsor-block-ok">
+  <a title="Ссылка на блог компании" href="http://weareok.ru/">
+    <img src="img/ok.svg" alt="Логотип компании «Одноклассники»">
+  </a>
+  <p>Статья переведена благодаря спонсорской поддержке компании «<a title="Ссылка на блог компании" href="http://weareok.ru/">Одноклассники</a>».</p>
+</section>
 
 [1]: http://en.wikipedia.org/wiki/Memory_model_%28programming%29
 [2]: https://ru.wikipedia.org/wiki/%D0%A1%D0%B1%D0%BE%D1%80%D0%BA%D0%B0_%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%B0
@@ -247,4 +251,4 @@
 [Только взгляните, сколько раз запускается очистка памяти!]: img/fig2.jpg
 [Вот так то лучше.]: img/fig3.jpg
 
-[22]: http://ok.ru/
+[22]: http://weareok.ru/
