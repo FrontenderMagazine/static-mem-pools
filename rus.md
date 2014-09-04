@@ -218,7 +218,7 @@
 использованием Инструментов Разработчика][20]
 * [Пишем быстрый и эффективный javascript][21]
 
-<section class="sponsor-block sponsor-block-ok">
+<section class="gratitude-block gratitude-block-ok">
   <a title="Ссылка на блог компании" href="http://weareok.ru/">
     <img src="img/ok.svg" alt="Логотип компании «Одноклассники»">
   </a>
